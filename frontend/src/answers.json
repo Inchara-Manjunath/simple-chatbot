@@ -1,0 +1,15 @@
+{
+  "hi": "Hello!",
+  "hello": "Hi there!",
+  "good morning": "good Morning, Have a nice day!",
+  "how are you": "I'm doing great — thanks! How can I help you today?",
+  "what is your name": "I'm SimpleBot ChatBot",
+  "who are you": "I'm a simple chatbot created to help you!",
+  "bye": "Goodbye! Take care!",
+  "Can you Flip a Coin": "Sure! You got heads.",
+  "help": "I can answer simple questions like 'what is your name' or 'how are you'. Ask me!",
+  "time": "Use the 'time' command to get the current time.",
+  "date": "Use the 'date' command to get today's date.",
+  "javascript": "JavaScript (JS) is a programming language used for web development.",
+  "joke": "Why did the developer go broke? Because he used up all his cache."
+}
