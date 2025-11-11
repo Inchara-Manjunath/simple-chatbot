@@ -39,3 +39,24 @@ npm install
 
 # Start the development server
 npm run dev
+```
+
+---
+
+## 🔧 Environment Variables (Frontend)
+
+If the frontend needs to call the backend API, configure the backend URL in Vite:
+
+1) Create a file at `frontend/.env` with:
+
+```
+VITE_BACKEND_URL=https://your-backend.onrender.com
+```
+
+2) Rebuild or restart the dev server after changes.
+
+In code, read it as:
+
+```js
+const baseUrl = import.meta.env.VITE_BACKEND_URL;
+```
