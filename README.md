@@ -20,11 +20,6 @@ Built with **JavaScript** and **React.js** for seamless frontend–backend commu
 **API Integration:** Custom REST API  
 **Version Control:** Git, GitHub  
 
----
-Output images
-<img width="1877" height="907" alt="Screenshot 2025-11-08 171509" src="https://github.com/user-attachments/assets/0878feeb-fecd-4ef1-8448-f078643f4d13" />
-
-
 ## ⚙️ Installation & Setup
 
 ```bash
