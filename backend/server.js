@@ -4,13 +4,15 @@ const http = require("http");
 const { Server } = require("socket.io");
 
 const app = express();
-app.use(cors());
+// Allow CORS from configured origin (e.g., Netlify domain) or all in fallback
+const allowedOrigin = process.env.CLIENT_ORIGIN || true; // true => reflect request origin
+app.use(cors({ origin: allowedOrigin }));
 
 const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: allowedOrigin,
     methods: ["GET", "POST"]
   }
 });
@@ -33,4 +35,5 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(5000, () => console.log("✅ Backend running on port 5000"));
+const PORT = process.env.PORT || 5000;
+server.listen(PORT, () => console.log(`✅ Backend running on port ${PORT}`));
