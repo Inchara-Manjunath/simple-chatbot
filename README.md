@@ -3,6 +3,8 @@
 An interactive **Chatbot Web Application** that processes user queries and generates responses through backend API integration.  
 Built with **JavaScript** and **React.js** for seamless frontend–backend communication.
 
+## 🚀 Live Demo
+🔗 [View Chatbot](https://simple-chatbot1.netlify.app/)
 ---
 
 ## 🚀 Features
@@ -21,6 +23,7 @@ Built with **JavaScript** and **React.js** for seamless frontend–backend commu
 **Version Control:** Git, GitHub  
 
 ## ⚙️ Installation & Setup
+to run this project locally
 
 ```bash
 # Clone this repository
@@ -37,21 +40,3 @@ npm run dev
 ```
 
 ---
-
-## 🔧 Environment Variables (Frontend)
-
-If the frontend needs to call the backend API, configure the backend URL in Vite:
-
-1) Create a file at `frontend/.env` with:
-
-```
-VITE_BACKEND_URL=https://your-backend.onrender.com
-```
-
-2) Rebuild or restart the dev server after changes.
-
-In code, read it as:
-
-```js
-const baseUrl = import.meta.env.VITE_BACKEND_URL;
-```
